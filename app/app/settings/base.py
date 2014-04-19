@@ -59,10 +59,6 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
 
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, '../../srv/assets'),
-)
-
 TEMPLATE_DIRS = (
     os.path.join(BASE_DIR, '../templates/'),
 )
