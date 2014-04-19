@@ -5,9 +5,4 @@ AWS_SECRET_ACCESS_KEY = os.environ['AWS_SECRET_ACCESS_KEY']
 
 AWS_STORAGE_BUCKET_NAME = 'ingledow-staging'
 
-STATICFILES_DIRS = 'http://ingledow-staging.s3.amazonaws.com/'
-
-STATIC_ROOT = (
-    os.path.join(BASE_DIR, '../../srv/assets'),
-)
 STATIC_URL = 'http://ingledow-staging.s3.amazonaws.com/'
