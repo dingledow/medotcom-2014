@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		{% block head %}
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<title>
+				{% block title %} Django Heroku Skeleton {% endblock %}
+			</title>
+
+			{% block css %}
+			<link rel="stylesheet" type="text/css"
+				href="{{STATIC_URL}}bootstrap/css/bootstrap.min.css">
+			<link rel="stylesheet" type="text/css"
+				href="{{STATIC_URL}}bootstrap/css/bootstrap-theme.min.css">
+			<link rel="shortcut icon" href="{{ STATIC_URL }}favicon.ico">
+			{% endblock %}
+
+			<!--[if lt IE 9]>
+				<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+				<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+			<![endif]-->
+
+		{% endblock %}
+	</head>
+	<body>
+	{% block body %}
+
+		{% block header %}
+		{% endblock %}
+
+		{% block content %}
+		{% endblock %}
+
+		{% block js %}
+			<script src="https://code.jquery.com/jquery.js"></script>
+			<script src="js/bootstrap.min.js"></script>
+		{% endblock %}
+
+	{% endblock %}
+	</body>
+</html>

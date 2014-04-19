@@ -1,0 +1,11 @@
+venv/
+*.pyc
+db.sqlite3
+.DS_Store
+srv
+node_modules
+*.db
+*.log
+fabfile.py
+Gruntfile.coffee
+package.json

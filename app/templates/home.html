@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="jumbotron">
+	<div class="container">
+		<h1>Django Heroku Skeleton</h1>
+		<p>
+			A minimal Django skeleton project set up for local
+			development and ready to deploy to Heroku. Comes with a simple bootstrap
+			integration.
+		</p>
+		<p>
+			<a
+				class="btn btn-primary btn-lg"
+				role="button"
+				href="https://github.com/jamiecurle/django-heroku-skeleton">
+				<img
+					width="40"
+					height="40"
+					src="http://obscure-django-heroku-skeleton.s3.amazonaws.com/github.svg">
+				Clone on Github
+			</a>
+		</p>
+	</div>
+</div>
+<div class="container">
+	<p>
+		Django Heroku Skeleton is created by <a href="https://jamie.curle.io">Jamie Curle</a>.
+	</p>
+	<p>
+
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="jamiecurle" data-size="large">Tweet</a>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+	</p>
+</div>
+{% endblock %}
