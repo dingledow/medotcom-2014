@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}The Blog of David Ingledow{% endblock %}
+
+{% block content %}
+    <div class="blog-container">
+    {% for post in post %}
+        <section class="post">
+            <a class="post-title"
+                href="{{post.get_absolute_url}}">
+                {{ post.title }}
+            </a>
+            <span class="post-meta">
+                {{ post.pub_date | date:"d F Y" }}
+            </span>
+            <p class="post-excerpt">
+                {{ post.excerpt }}
+            </p>
+        </section>
+    {% endfor %}
+    </div>
+{% endblock %}

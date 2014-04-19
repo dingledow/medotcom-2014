@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% load markdown_deux_tags %}
+
+{% block title %}The Blog of David Ingledow – {{ post.title }}{% endblock %}
+
+{% block extra_css %}
+    <style>
+        a{
+            color: {{ post.post_color }};
+        }
+    </style>
+{% endblock %}
+
+{% block content %}
+    <div class="blog-container">
+        <section class="single-post">
+            <h1>{{ post.title }}</h1>
+            <span class="post-meta">
+                {{ post.pub_date | date:"d F Y" }}
+            </span>
+            {{ post.text | markdown }}
+        </section>
+    </div>
+{% endblock %}
