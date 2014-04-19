@@ -26,6 +26,7 @@ INSTALLED_APPS = (
     'south',
     'blog',
     'markdown_deux',
+    'storages',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -56,9 +57,7 @@ USE_TZ = True
 
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
-STATIC_URL = '/static/'
-
-STATIC_ROOT = 'srv/static'
+STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, '../../srv/assets'),

@@ -2,7 +2,7 @@ venv/
 *.pyc
 db.sqlite3
 .DS_Store
-srv
+srv/static/
 node_modules
 *.db
 *.log
