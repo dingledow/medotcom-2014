@@ -13,7 +13,7 @@ DEBUG = True if environ.get('DEBUG') is True else False
 
 TEMPLATE_DEBUG = True
 
-ALLOWED_HOSTS = ['.herokuapp.com']
+ALLOWED_HOSTS = ['.herokuapp.com', '.ingledow.co.uk', ]
 
 INSTALLED_APPS = (
     'django.contrib.admin',
@@ -23,6 +23,9 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'gunicorn',
+    'south',
+    'blog',
+    'markdown_deux',
 )
 
 MIDDLEWARE_CLASSES = (

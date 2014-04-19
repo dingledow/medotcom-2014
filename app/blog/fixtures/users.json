@@ -1,0 +1,38 @@
+[
+{
+  "pk": 1, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "dingledow", 
+    "first_name": "", 
+    "last_name": "", 
+    "is_active": true, 
+    "is_superuser": true, 
+    "is_staff": true, 
+    "last_login": "2014-04-07T20:51:31.449Z", 
+    "groups": [], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$12000$aIq0RO4mgItH$Jr3uEWRmRgLYIKYXx52rTB9U9YxeFNSSi4Sgz+j11yc=", 
+    "email": "david@ingledow.co.uk", 
+    "date_joined": "2014-04-07T20:51:31.449Z"
+  }
+},
+{
+  "pk": 2, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "test", 
+    "first_name": "", 
+    "last_name": "", 
+    "is_active": true, 
+    "is_superuser": true, 
+    "is_staff": true, 
+    "last_login": "2014-04-07T22:10:58.145Z", 
+    "groups": [], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$12000$UMxcSPl8b1o8$hoB1HWRoHQKXGSsSRIRQMZ/fLe9k8qlQqAcbHYZXOxo=", 
+    "email": "david+test@ingledow.co.uk", 
+    "date_joined": "2014-04-07T22:10:58.145Z"
+  }
+}
+]

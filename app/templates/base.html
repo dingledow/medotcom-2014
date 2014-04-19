@@ -5,37 +5,61 @@
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 			<title>
-				{% block title %} Django Heroku Skeleton {% endblock %}
+				{% block title %}David Ingledow{% endblock %}
 			</title>
 
-			{% block css %}
-			<link rel="stylesheet" type="text/css"
-				href="{{STATIC_URL}}bootstrap/css/bootstrap.min.css">
-			<link rel="stylesheet" type="text/css"
-				href="{{STATIC_URL}}bootstrap/css/bootstrap-theme.min.css">
-			<link rel="shortcut icon" href="{{ STATIC_URL }}favicon.ico">
-			{% endblock %}
+			<script type="text/javascript" src="//use.typekit.net/ilo0oai.js"></script>
+			<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
-			<!--[if lt IE 9]>
-				<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-				<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-			<![endif]-->
+			{% block css %}
+				<link
+					rel="stylesheet"
+					type="text/css"
+					href="{{STATIC_URL}}css/global.css">
+				<link
+					rel="stylesheet"
+					type="text/css"
+					href="{{STATIC_URL}}css/avenir.css">
+			{% endblock %}
+			{% block extra_css %}
+			{% endblock %}
 
 		{% endblock %}
 	</head>
-	<body>
-	{% block body %}
 
-		{% block header %}
+	<body id="{% block body_id %}{% endblock %}"
+		  class="{% block body_class %}{% endblock %}">
+
+    {% block body %}
+
+		{% block nav %}
+			<div class="nav">
+			    <ul>
+			        <li><a href="/">ABOUT</a></li>
+			        <li><a href="/blog/">BLOG</a></li>
+			        <li><a href="/work/">WORK</a></li>
+			        <li><a href="/contact/">CONTACT</a></li>
+			    </ul>
+			</div>
 		{% endblock %}
 
-		{% block content %}
-		{% endblock %}
+			{% block container %}
+			<div class="post_header">
+			</div>
+			<div class="content">
+				{% block content %}
+				{% endblock %}
+			</div>
+			{% endblock %}
 
-		{% block js %}
-			<script src="https://code.jquery.com/jquery.js"></script>
-			<script src="js/bootstrap.min.js"></script>
-		{% endblock %}
+		{% block footer %}
+		<footer>
+			<p>David Ingledow &copy; 2014</p>
+		    <a class="icon-twitter" href="https://twitter.com/dingledow">
+		    </a>
+		    <a href="https://plus.google.com/108117619306984245111?rel=author"></a>
+		</footer>
+		{% endblock footer %}
 
 	{% endblock %}
 	</body>
