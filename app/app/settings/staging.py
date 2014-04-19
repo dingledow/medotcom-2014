@@ -9,5 +9,5 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, '../../srv/assets'),
 )
 
-STATIC_ROOT = os.path.abspath(os.path.join(BASE_DIR, '../../srv/static'))
+# STATIC_ROOT = 'http://ingledow-staging.s3.amazonaws.com/'
 STATIC_URL = 'http://ingledow-staging.s3.amazonaws.com/'
