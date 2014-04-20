@@ -262,6 +262,3 @@ class PostViewTest(LiveServerTestCase):
         self.assertTrue(str(post.pub_date.year) in response.content)
         self.assertTrue(post.pub_date.strftime('%b') in response.content)
         self.assertTrue(str(post.pub_date.day) in response.content)
-
-        # Check the post tags are in the response
-        self.assertTrue(post.tags in response.content)

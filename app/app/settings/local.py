@@ -5,6 +5,8 @@ ALLOWED_HOSTS = ['*']
 
 DEBUG = True
 
+SOUTH_TESTS_MIGRATE = False
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
