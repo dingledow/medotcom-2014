@@ -19,3 +19,11 @@ def about(request):
         posts = Post.objects.filter(published=True).order_by('-pub_date')
         # now return the rendered template
         return render(request, 'blog/about.html', {'post': posts})
+
+def work(request):
+        # now return the rendered template
+        return render(request, 'blog/work.html')
+
+def contact(request):
+        # now return the rendered template
+        return render(request, 'blog/contact.html')

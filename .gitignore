@@ -9,3 +9,5 @@ node_modules
 fabfile.py
 Gruntfile.coffee
 package.json
+min/
+media/

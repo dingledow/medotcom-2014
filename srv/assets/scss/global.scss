@@ -1,0 +1,279 @@
+/*==============================================================================
+
+GLOBAL
+
+==============================================================================*/
+
+html{
+    height: 100%;
+    max-height: 100%;
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 2.0rem;
+    line-height: 1.6em;
+    color: #3A4145;
+    margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+    text-rendering: optimizeLegibility;
+    line-height: 1;
+    margin-top: 0;
+    font-family: AvenirLTStd-Black, Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    a{
+        color: #494949;
+    }
+}
+
+h1 {
+    font-size: 2em;
+    line-height: 1.2em;
+}
+h2 {
+    font-size: 1.5em;
+    line-height: 1.2em;
+}
+h3 {
+    font-size: 1.2em;
+}
+h4 {
+    font-size: 1em;
+}
+p, ul, ol {
+    margin: 1.6em 0;
+    font-family: "fira-sans",  Helvetica,  Arial,  sans-serif;
+    font-weight: 100;
+}
+ol ol, ul ul, ul ol, ol ul {
+    margin: 0.4em 0;
+}
+
+/*==============================================================================
+
+NAVIGATION
+
+==============================================================================*/
+
+nav{
+    position: fixed;
+    left: 50%;
+    margin-left: -152.5px;
+    top: 0;
+    z-index: -1;
+    ul{
+        list-style: none;
+        padding: 0;
+        margin: 19px 0 0 0;
+        text-align: center;
+        li{
+            display: inline;
+            margin: 10px;
+            a{
+                text-decoration: none;
+                color: #fff;
+                text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+                font-family: AvenirLTStd-Black,  Helvetica,  Arial,  sans-serif;
+                font-size: 13px;
+                letter-spacing: 1px;
+            }
+            a:hover{
+                color: #cecece;
+                transition: color 0.3s ease;
+            }
+        }
+    }
+}
+
+div.nav_bg {
+    height: 72px;
+    width: 100%;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-color: #2c2c2c;
+    z-index: -10;
+    position: absolute;
+    top: 0;
+}
+
+/*==============================================================================
+
+GLOBAL CONTENT
+
+==============================================================================*/
+
+div.content {
+    margin-top: 0;
+    border-bottom: none;
+    padding-bottom: 0;
+    background-color: white;
+    z-index: 1;
+    margin-top: 72px;
+}
+
+/*==============================================================================
+
+BLOG (GLOBAL INDEX)
+
+==============================================================================*/
+
+div.blog-container {
+    max-width: 680px;
+    margin: 0 auto;
+    section.post{
+        padding: 4em 20px 2em;
+        section.post-title{
+            text-align: center;
+            a.post-title, h1.post-title{
+                margin-bottom: 0.2em;
+                font-family: AvenirLTStd-Black,  Helvetica,  Arial,  sans-serif;
+                font-size: 2em;
+                line-height: 1.2em;
+                color: #f2462a;
+                text-decoration: none;
+            }
+            a.post-title:hover {
+                color: #e54429;
+                transition: color 0.3s ease;
+            }
+            span.post-meta {
+                display: block;
+                text-transform: uppercase;
+                color: #b2b2b1;
+                font-family: "fira-sans",  Helvetica,  Arial,  sans-serif;
+                font-weight: 100;
+                font-size: 13px;
+                letter-spacing: 1px;
+                margin-bottom: 1em;
+            }
+        }
+        p.post-excerpt {
+            font-family: "fira-sans",  Helvetica,  Arial,  sans-serif;
+            font-weight: 100;
+            font-size: 0.9em;
+            line-height: 1.8em;
+            margin-bottom: 0;
+            margin-top: 1em;
+        }
+    }
+}
+
+/*==============================================================================
+
+BLOG (SINGLE POST)
+
+==============================================================================*/
+
+body#blog.single{
+    section.post{
+        p{
+            font-weight: 100;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+        h1.post-title{
+            color: #3c3c3c;
+        }
+    }
+}
+
+/*==============================================================================
+
+HOME (ABOUT)
+
+==============================================================================*/
+
+body#about{
+    div.content{
+        section.home-header{
+            height: 680px;
+            @media screen and (min-width: 1500px){
+                height: 720px;
+            }
+            @media screen and (min-width: 1700px){
+                height: 840px;
+            }
+            @media screen and (min-width: 2000px){
+                height: 1100px;
+            }
+            background-size: cover;
+            background-position: center top 30%;
+            position: relative;
+            span{
+                font-family: AvenirLTStd-Black,  Helvetica,  Arial,  sans-serif;
+                font-size: 3em;
+                position: absolute;
+                color: white;
+                margin: 0 auto 0;
+                top: 36px;
+                text-shadow: 0 1px rgba(0,0,0,0.1);
+                line-height: 1.2em;
+                width: 100%;
+                text-align: center;
+            }
+            span:after{
+                content: "DESIGNER";
+                display: block;
+                letter-spacing: 5px;
+                font-size: 0.3em;
+                margin-top: -10px;
+            }
+        }
+        section.content.bio{
+            border-bottom: 1px solid #eaeaea;
+            div{
+                max-width: 640px;
+                margin: 0 auto;
+                padding: 2em 10px;
+                p{
+                    a{
+                        color: #fc411b;
+                        text-decoration: none;
+                        padding-bottom: 0;
+                    }
+                    a:hover{
+                        color: #cc3219;
+                        text-decoration: underline;
+                        transition: all 0.3s ease;
+                    }
+                }
+            }
+        }
+        section.content.blog-container{
+            div{
+                max-width: 640px;
+                margin: 0 auto;
+                padding: 4em 10px 2em;
+            }
+        }
+    }
+}
+
+/*==============================================================================
+
+FOOTER
+
+==============================================================================*/
+
+footer{
+    padding: 10px 10px 10px 20px;
+    border-top: 1px solid #eaeaea;
+    p{
+        font-family: "fira-sans",  Helvetica,  Arial,  sans-serif;
+        font-size: 14px;
+        margin: 0;
+        color: #a8a8a8;
+        display: inline-block;
+        vertical-align: middle;
+        width: calc(100% - 30px);
+        font-weight: 100;
+    }
+}
+footer a.icon-twitter {
+    color: #55acee;
+}

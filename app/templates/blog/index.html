@@ -2,17 +2,22 @@
 
 {% block title %}The Blog of David Ingledow{% endblock %}
 
+<body id="{% block body_id %}blog{% endblock %}"
+      class="{% block body_class %}index{% endblock %}">
+
 {% block content %}
     <div class="blog-container">
     {% for post in post %}
         <section class="post">
-            <a class="post-title"
-                href="{{post.get_absolute_url}}">
-                {{ post.title }}
-            </a>
-            <span class="post-meta">
-                {{ post.pub_date | date:"d F Y" }}
-            </span>
+            <section class="post-title">
+                <a class="post-title"
+                    href="{{post.get_absolute_url}}">
+                    {{ post.title }}
+                </a>
+                <span class="post-meta">
+                    {{ post.pub_date | date:"d F Y" }}
+                </span>
+            </section>
             <p class="post-excerpt">
                 {{ post.excerpt }}
             </p>
