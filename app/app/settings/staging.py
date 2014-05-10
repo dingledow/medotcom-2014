@@ -13,3 +13,6 @@ STATICFILES_DIRS = (
 
 STATIC_ROOT = 'http://ingledow-staging.s3.amazonaws.com/'
 STATIC_URL = 'http://ingledow-staging.s3.amazonaws.com/'
+
+MEDIA_ROOT = 'http://ingledow-media.s3.amazonaws.com/'
+MEDIA_URL = 'http://ingledow-media.s3.amazonaws.com/'
