@@ -8,6 +8,7 @@ class Post(models.Model):
     pub_date = models.DateTimeField()
     excerpt = models.TextField(null=True)
     text = models.TextField()
+    header_image = models.FileField(upload_to='blog/%Y/%m/%d', null=True, blank=True)
     post_color = models.CharField(max_length=20, null=True)
     tags = models.CharField(max_length=80, blank=True)
     published = models.BooleanField(default=True)

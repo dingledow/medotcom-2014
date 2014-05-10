@@ -2,21 +2,58 @@
 
 {% block title %}David Ingledow{% endblock %}
 
+<body id="{% block body_id %}about{% endblock %}"
+      class="{% block body_class %}{% endblock %}">
+
+{% block extra_css %}
+    <style>
+        body{
+            height: 100%;
+        }
+        section.home-header{
+            background-image: radial-gradient(transparent, rgba(0,0,0,0.4)),
+                              url({{STATIC_URL}}img/profile.jpg);
+            margin-top: 72px;
+        }
+    </style>
+{% endblock %}
+
 {% block content %}
-    <div class="blog-container">
-    {% for post in post %}
-        <section class="post">
-            <a class="post-title"
-                href="{{post.get_absolute_url}}">
-                {{ post.title }}
-            </a>
-            <span class="post-meta">
-                {{ post.pub_date | date:"d F Y" }}
-            </span>
-            <p class="post-excerpt">
-                {{ post.excerpt }}
-            </p>
-        </section>
-    {% endfor %}
-    </div>
+    <section class="home-header">
+        <span>
+            David Ingledow
+        </span>
+    </section>
+
+    <section class="content bio">
+        <div>
+        <p>Alreet, my name is David Ingledow and I’m a designer based in Newcastle upon Tyne.</p>
+
+        <p>I’m fascinated about how we use and experience technology and often write about it on my <a href="{% url 'blog_index' %}">blog</a>.  For ramblings strictly less than 140 characters, follow me on <a href="http://twitter.com/dingledow" target="_blank">Twitter</a>.</p>
+
+        <p>I currently design and build things at <a href="https://www.sopost.com/" target="_blank">SoPost</a>. I contribute and post my code on <a href="https://github.com/dingledow/" target="_blank">GitHub</a> and occasionaly share what I’m working on to <a href="https://dribbble.com/dingledow" target="_blank">Dribbble</a>. I capture my sights and add them to my <a href="http://dingledow.vsco.co/" target="_blank">VSCO Grid</a>.</p>
+
+        <p>Music is a passion of mine. I can move my way around a piano and I listen to things on <a href="http://rdio.com/people/dingledow" target="_blank">Rdio</a>.</p>
+        </div>
+    </section>
+
+    <section class="content blog-container">
+        <div>
+            <h2>Latest Posts</h2>
+        {% for post in post %}
+            <section class="post">
+                <h3><a class="post-title"
+                    href="{{post.get_absolute_url}}">
+                    {{ post.title }}
+                </a></h3>
+                <span class="post-meta">
+                    {{ post.pub_date | date:"d F Y" }}
+                </span>
+                <p class="post-excerpt">
+                    {{ post.excerpt }}
+                </p>
+            </section>
+        {% endfor %}
+        </div>
+    </section>
 {% endblock %}
