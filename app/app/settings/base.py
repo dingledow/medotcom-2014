@@ -9,7 +9,7 @@ SECRET_KEY = environ.get(
     '##%he5sc1%^9oqlf=dq8ae&k1kw(17q^)-=%f7u$rq9)_d06g_')
 
 # allow debug to be set from env config
-DEBUG = True if environ.get('DEBUG') is True else False
+DEBUG = True
 
 TEMPLATE_DEBUG = True
 
