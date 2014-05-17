@@ -159,7 +159,7 @@ div.blog-container {
             font-size: 0.9em;
             line-height: 1.8em;
             margin-bottom: 0;
-            margin-top: 1em;
+            margin-top: 0;
             max-width: 680px;
             margin: 0 auto;
         }
@@ -173,6 +173,10 @@ div.blog-container {
             height: auto;
         }
     }
+}
+
+p.post-excerpt{
+    margin-top: 12px;
 }
 
 /*==============================================================================
@@ -287,6 +291,72 @@ body#about{
                         margin-top: -18px;
                     }
                 }
+            }
+        }
+    }
+}
+
+/*==============================================================================
+
+CONTACT
+
+==============================================================================*/
+
+body#contact{
+    height: 100%;
+    height: calc(100% - 127px);
+    div.content{
+        height: 100%;
+        section{
+            height: 100%;
+            div{
+                text-align: center;
+                position: relative;
+                top: 50%;
+                -webkit-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+                p{
+                    a{
+                        border-radius: 3px;
+                        background-color: #fc411b;
+                        text-decoration: none;
+                        padding-bottom: 0;
+                        color: white;
+                        font-weight: 700;
+                        padding: 12px 18px;
+                        font-size: 1.1em;
+                    }
+                    a:hover{
+                        background-color: #cc3219;
+                        transition: all 0.3s ease;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*==============================================================================
+
+WORK (ABOUT)
+
+==============================================================================*/
+
+body#work{
+    height: 100%;
+    height: calc(100% - 127px);
+    div.content{
+        height: 100%;
+        section{
+            height: 100%;
+            div{
+                text-align: center;
+                position: relative;
+                top: 50%;
+                -webkit-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
             }
         }
     }
