@@ -4,6 +4,9 @@
 		{% block head %}
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+			{% block extra_meta %}
+			{% endblock %}
+
 			<title>
 				{% block title %}David Ingledow{% endblock %}
 			</title>
@@ -26,6 +29,8 @@
 
 			<script type="text/javascript" src="//use.typekit.net/ilo0oai.js"></script>
 			<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+			<link rel="stylesheet" type="text/css" href="//cloud.typography.com/7777472/762142/css/fonts.css" />
 
 			{% block css %}
 				<link
