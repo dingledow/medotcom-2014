@@ -45,8 +45,8 @@ h4 {
 }
 p, ul, ol {
     margin: 1.6em 0;
-    font-family: "fira-sans",  Helvetica,  Arial,  sans-serif;
-    font-weight: 100;
+    font-family: 'Whitney A', 'Whitney B', "fira-sans",  Helvetica,  Arial,  sans-serif;
+    font-weight: 400;
 }
 ol ol, ul ul, ul ol, ol ul {
     margin: 0.4em 0;
@@ -121,12 +121,15 @@ BLOG (GLOBAL INDEX)
 ==============================================================================*/
 
 div.blog-container {
-    max-width: 680px;
-    margin: 0 auto;
+    width: 100%;
     section.post{
-        padding: 4em 20px 2em;
+        padding: 4em 0 2em;
         section.post-title{
+            max-width: 680px;
+            margin: 0 auto;
             text-align: center;
+            padding-left: 20px;
+            padding-right: 20px;
             a.post-title, h1.post-title{
                 margin-bottom: 0.2em;
                 font-family: AvenirLTStd-Black,  Helvetica,  Arial,  sans-serif;
@@ -143,20 +146,31 @@ div.blog-container {
                 display: block;
                 text-transform: uppercase;
                 color: #b2b2b1;
-                font-family: "fira-sans",  Helvetica,  Arial,  sans-serif;
-                font-weight: 100;
+                font-family: 'Whitney A', 'Whitney B', "fira-sans",  Helvetica,  Arial,  sans-serif;
+                font-weight: 500;
                 font-size: 13px;
                 letter-spacing: 1px;
                 margin-bottom: 1em;
             }
         }
         p.post-excerpt {
-            font-family: "fira-sans",  Helvetica,  Arial,  sans-serif;
+            font-family: 'Whitney A', 'Whitney B', "fira-sans",  Helvetica,  Arial,  sans-serif;
             font-weight: 100;
             font-size: 0.9em;
             line-height: 1.8em;
             margin-bottom: 0;
             margin-top: 1em;
+            max-width: 680px;
+            margin: 0 auto;
+        }
+        p{
+            max-width: 680px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        img{
+            max-width: 800px;
+            height: auto;
         }
     }
 }
@@ -249,6 +263,30 @@ body#about{
                 max-width: 640px;
                 margin: 0 auto;
                 padding: 4em 10px 2em;
+                section.post{
+                    h3{
+                        a{
+                            color: #fc411b;
+                            text-decoration: none;
+                            padding-bottom: 0;
+                        }
+                        a:hover{
+                            color: #cc3219;
+                            text-decoration: underline;
+                            transition: all 0.3s ease;
+                        }
+                    }
+                    span.post-meta{
+                        display: block;
+                        text-transform: uppercase;
+                        color: #b2b2b1;
+                        font-family: 'Whitney A', 'Whitney B', "fira-sans",  Helvetica,  Arial,  sans-serif;
+                        font-weight: 500;
+                        font-size: 13px;
+                        letter-spacing: 1px;
+                        margin-top: -18px;
+                    }
+                }
             }
         }
     }
@@ -264,7 +302,7 @@ footer{
     padding: 10px 10px 10px 20px;
     border-top: 1px solid #eaeaea;
     p{
-        font-family: "fira-sans",  Helvetica,  Arial,  sans-serif;
+        font-family: 'Whitney A', 'Whitney B', "fira-sans",  Helvetica,  Arial,  sans-serif;
         font-size: 14px;
         margin: 0;
         color: #a8a8a8;

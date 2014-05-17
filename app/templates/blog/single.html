@@ -4,6 +4,16 @@
 
 {% block title %}The Blog of David Ingledow – {{ post.title }}{% endblock %}
 
+{% block extra_meta %}
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@dingledow">
+    <meta name="twitter:title" content="@dingledow">
+    <meta name="twitter:description" content="{{ post.excerpt }}">
+    <meta name="twitter:creator" content="@dingledow">
+    <meta name="twitter:image:src" content="{{ MEDIA_URL }}{{ post.header_image }}">
+    <meta name="twitter:domain" content="http://david.ingledow.co.uk{{post.get_absolute_url}}">
+{% endblock %}
+
 <body id="{% block body_id %}blog{% endblock %}"
       class="{% block body_class %}single{% endblock %}">
 
