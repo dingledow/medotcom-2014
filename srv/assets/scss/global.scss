@@ -162,6 +162,8 @@ div.blog-container {
             margin-top: 0;
             max-width: 680px;
             margin: 0 auto;
+            padding-left: 20px;
+            padding-right: 20px;
         }
         p{
             max-width: 680px;
@@ -189,6 +191,8 @@ body#blog.single{
     section.post{
         p{
             font-weight: 100;
+            padding-left: 20px;
+            padding-right: 20px;
             img{
                 width: 100%;
                 height: auto;
@@ -196,6 +200,11 @@ body#blog.single{
         }
         h1.post-title{
             color: #3c3c3c;
+        }
+        p.image{
+            max-width: 800px;
+            padding-left: 0;
+            padding-right: 0;
         }
     }
 }
