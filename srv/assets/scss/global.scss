@@ -20,7 +20,7 @@ body{
 h1,h2,h3,h4,h5,h6{
     text-rendering: optimizeLegibility;
     line-height: 1;
-    margin-top: 0;
+    //margin-top: 0;
     font-family: AvenirLTStd-Black, Helvetica, Arial, sans-serif;
     font-weight: normal;
     font-style: normal;
@@ -137,6 +137,7 @@ div.blog-container {
                 line-height: 1.2em;
                 color: #f2462a;
                 text-decoration: none;
+                margin-top: 0;
             }
             a.post-title:hover {
                 color: #e54429;
@@ -166,14 +167,42 @@ div.blog-container {
             padding-right: 20px;
             text-align: center;
         }
-        p{
+        p, h2, h3, h4, h5, h6, pre{
             max-width: 680px;
             margin-left: auto;
             margin-right: auto;
+            padding-left: 20px;
+            padding-right: 20px;
         }
         img{
             max-width: 800px;
             height: auto;
+        }
+        pre{
+            background-color: #efefef;
+            padding: 0 9px;
+            border-radius: 2px;
+            border: 1px solid #dddbdb;
+            box-sizing: border-box;
+            margin: 20px auto;
+            code{
+                white-space: normal;
+            }
+        }
+        ul, ol{
+            max-width: 680px;
+            margin-left: auto;
+            margin-right: auto;
+            font-family: 'Whitney A', 'Whitney B', "fira-sans",  Helvetica,  Arial,  sans-serif;
+            font-weight: 100;
+            font-size: 0.9em;
+            line-height: 1.8em;
+            padding-left: 20px;
+            padding-right: 20px;
+            box-sizing: border-box;
+            @media screen and (max-width: 720px){
+                margin-left: 20px;
+            }
         }
     }
 }
@@ -192,11 +221,15 @@ body#blog.single{
     section.post{
         p{
             font-weight: 100;
-            padding-left: 20px;
-            padding-right: 20px;
             img{
                 width: 100%;
                 height: auto;
+            }
+            code{
+                background-color: #efefef;
+                padding: 3px 6px;
+                border-radius: 2px;
+                border: 1px solid #dddbdb;
             }
         }
         h1.post-title{
@@ -204,8 +237,9 @@ body#blog.single{
         }
         p.image{
             max-width: 800px;
-            padding-left: 0;
-            padding-right: 0;
+            padding: 10px 0;
+            border-top: 1px solid #efefef;
+            border-bottom: 1px solid #efefef;
         }
     }
 }
