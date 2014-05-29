@@ -13,16 +13,15 @@ html{
 body{
     font-size: 2.0rem;
     line-height: 1.6em;
-    color: #3A4145;
+    color: #424242;
     margin: 0;
 }
 
 h1,h2,h3,h4,h5,h6{
     text-rendering: optimizeLegibility;
     line-height: 1;
-    //margin-top: 0;
-    font-family: AvenirLTStd-Black, Helvetica, Arial, sans-serif;
-    font-weight: normal;
+    font-family: 'Mercury Display A', 'Mercury Display B',  Helvetica, Arial, sans-serif;
+    font-weight: 700;
     font-style: normal;
     a{
         color: #494949;
@@ -45,8 +44,8 @@ h4 {
 }
 p, ul, ol {
     margin: 1.6em 0;
-    font-family: 'Whitney A', 'Whitney B', "fira-sans",  Helvetica,  Arial,  sans-serif;
-    font-weight: 400;
+    font-family: 'Mercury SSm A', 'Mercury SSm B', Helvetica,  Arial,  sans-serif;
+    font-weight: 100;
 }
 ol ol, ul ul, ul ol, ol ul {
     margin: 0.4em 0;
@@ -74,26 +73,25 @@ nav{
             margin: 10px;
             a{
                 text-decoration: none;
-                color: #fff;
-                text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
-                font-family: AvenirLTStd-Black,  Helvetica,  Arial,  sans-serif;
+                color: #878786;
+                font-family: 'Whitney A', 'Whitney B', "fira-sans",  Helvetica,  Arial,  sans-serif;
                 font-size: 13px;
                 letter-spacing: 1px;
+                font-weight: 900;
             }
             a:hover{
-                color: #cecece;
+                color: #3c3c3c;
                 transition: color 0.3s ease;
             }
         }
     }
 }
-
 div.nav_bg {
     height: 72px;
     width: 100%;
     background-size: 100%;
     background-attachment: fixed;
-    background-color: #2c2c2c;
+    background-color: #fff;
     z-index: -10;
     position: fixed;
     top: 0;
@@ -109,7 +107,7 @@ div.content {
     margin-top: 0;
     border-bottom: none;
     padding-bottom: 0;
-    background-color: white;
+    background-color: #f7f7f7;
     z-index: 1;
     margin-top: 72px;
 }
@@ -132,7 +130,8 @@ div.blog-container {
             padding-right: 20px;
             a.post-title, h1.post-title{
                 margin-bottom: 0.2em;
-                font-family: AvenirLTStd-Black,  Helvetica,  Arial,  sans-serif;
+                font-family: 'Mercury Display A', 'Mercury Display B',  Helvetica,  Arial,  sans-serif;
+                font-weight: 700;
                 font-size: 2em;
                 line-height: 1.2em;
                 color: #f2462a;
@@ -155,7 +154,7 @@ div.blog-container {
             }
         }
         p.post-excerpt {
-            font-family: 'Whitney A', 'Whitney B', "fira-sans",  Helvetica,  Arial,  sans-serif;
+            font-family: 'Mercury SSm A', 'Mercury SSm B', Helvetica,  Arial,  sans-serif;
             font-weight: 100;
             font-size: 0.9em;
             line-height: 1.8em;
@@ -179,7 +178,7 @@ div.blog-container {
             height: auto;
         }
         pre{
-            background-color: #efefef;
+            background-color: #fff;
             padding: 0 9px;
             border-radius: 2px;
             border: 1px solid #dddbdb;
@@ -193,7 +192,7 @@ div.blog-container {
             max-width: 680px;
             margin-left: auto;
             margin-right: auto;
-            font-family: 'Whitney A', 'Whitney B', "fira-sans",  Helvetica,  Arial,  sans-serif;
+            font-family: 'Mercury SSm A', 'Mercury SSm B', Helvetica,  Arial,  sans-serif;
             font-weight: 100;
             font-size: 0.9em;
             line-height: 1.8em;
@@ -226,7 +225,7 @@ body#blog.single{
                 height: auto;
             }
             code{
-                background-color: #efefef;
+                background-color: #fff;
                 padding: 3px 6px;
                 border-radius: 2px;
                 border: 1px solid #dddbdb;
@@ -237,9 +236,7 @@ body#blog.single{
         }
         p.image{
             max-width: 800px;
-            padding: 10px 0;
-            border-top: 1px solid #efefef;
-            border-bottom: 1px solid #efefef;
+            padding: 36px 0;
         }
     }
 }
@@ -253,37 +250,39 @@ HOME (ABOUT)
 body#about{
     div.content{
         section.home-header{
-            height: 680px;
-            @media screen and (min-width: 1500px){
-                height: 720px;
-            }
-            @media screen and (min-width: 1700px){
-                height: 840px;
-            }
-            @media screen and (min-width: 2000px){
-                height: 1100px;
-            }
-            background-size: cover;
-            background-position: center top 30%;
-            position: relative;
-            span{
-                font-family: AvenirLTStd-Black,  Helvetica,  Arial,  sans-serif;
-                font-size: 3em;
-                position: absolute;
-                color: white;
-                margin: 0 auto 0;
+            overflow: hidden;
+            text-align: center;
+
+            h1{
+                font-family: 'Mercury Display A', 'Mercury Display B',  Helvetica,  Arial,  sans-serif;
+                font-size: 4em;
+                color: #3c3c3c;
+                margin: 0 auto;
+                padding: 0.8em 0 0.6em;
                 top: 36px;
-                text-shadow: 0 1px rgba(0,0,0,0.1);
                 line-height: 1.2em;
                 width: 100%;
-                text-align: center;
+                font-weight: 700;
             }
-            span:after{
+            h1:after{
                 content: "DESIGNER";
                 display: block;
-                letter-spacing: 5px;
-                font-size: 0.3em;
+                letter-spacing: 3px;
+                font-size: 0.2em;
                 margin-top: -10px;
+                font-family: 'Whitney A', 'Whitney B', "fira-sans",  Helvetica,  Arial,  sans-serif;
+                font-weight: 900;
+                color: #878786;
+            }
+            img{
+                margin: 0 auto;
+                width: 80%;
+                height: auto;
+                @media screen and (max-width: 800px){
+                    width: 120%;
+                    height: auto;
+                    margin-left: -10%;
+                }
             }
         }
         section.content.bio{
@@ -308,31 +307,45 @@ body#about{
         }
         section.content.blog-container{
             div{
-                max-width: 640px;
+                width: 80%;
+                max-width: 940px;
                 margin: 0 auto;
-                padding: 4em 10px 2em;
+                padding: 4em 10px 4em;
+                display: -webkit-flex;
+                display: flex;
+                @media screen and (max-width: 1200px){
+                    width: 100%;
+                    max-width: 100%;
+                    box-sizing: border-box;
+                }
                 section.post{
-                    h3{
-                        a{
-                            color: #fc411b;
-                            text-decoration: none;
-                            padding-bottom: 0;
-                        }
-                        a:hover{
-                            color: #cc3219;
-                            text-decoration: underline;
-                            transition: all 0.3s ease;
+                    height: 180px;
+                    display: inline-block;
+                    margin: 0;
+                    -webkit-flex: 1;
+                    flex: 1;
+                    margin: 0 10px;
+                    position: relative;
+                    a{
+                        text-decoration: none;
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        h3{
+                            color: white;
+                            margin: 0;
+                            text-align: center;
+                            position: absolute;
+                            top: 50%;
+                            -webkit-transform: translateY(-50%);
+                            -ms-transform: translateY(-50%);
+                            transform: translateY(-50%);
+                            width: 100%;
                         }
                     }
-                    span.post-meta{
-                        display: block;
-                        text-transform: uppercase;
-                        color: #b2b2b1;
-                        font-family: 'Whitney A', 'Whitney B', "fira-sans",  Helvetica,  Arial,  sans-serif;
-                        font-weight: 500;
-                        font-size: 13px;
-                        letter-spacing: 1px;
-                        margin-top: -18px;
+                    a:hover{
+                        background-color: rgba(0,0,0,0.1);
+                        transition: all 0.2s ease;
                     }
                 }
             }
@@ -416,7 +429,7 @@ footer{
     padding: 10px 10px 10px 20px;
     border-top: 1px solid #eaeaea;
     p{
-        font-family: 'Whitney A', 'Whitney B', "fira-sans",  Helvetica,  Arial,  sans-serif;
+        font-family: 'Mercury SSm A', 'Mercury SSm B', Helvetica,  Arial,  sans-serif;
         font-size: 14px;
         margin: 0;
         color: #a8a8a8;

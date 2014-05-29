@@ -22,11 +22,6 @@
         a{
             color: {{ post.post_color }};
         }
-        div.nav_bg{
-            background-image: url({{ MEDIA_URL }}{{ post.header_image }});
-            background-image: radial-gradient(transparent, rgba(0,0,0,0.4)),
-                              url({{ MEDIA_URL }}{{ post.header_image }});
-        }
     </style>
 {% endblock %}
 

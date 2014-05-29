@@ -16,7 +16,7 @@ def post(request, slug):
 
 def about(request):
         # get the blog posts that are published
-        posts = Post.objects.filter(published=True).order_by('-pub_date')
+        posts = Post.objects.filter(published=True).order_by('-pub_date')[0:3]
         # now return the rendered template
         return render(request, 'blog/about.html', {'post': posts})
 
