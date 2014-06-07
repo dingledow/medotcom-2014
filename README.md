@@ -22,3 +22,4 @@ Updates coming soon are:
 * Related posts based on tags
 * Google site speed test improvements
 * Clean up SCSS
+* Fix to latest posts to improve readability
