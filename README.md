@@ -19,6 +19,7 @@ New features:
 
 Updates coming soon are:
 
+* Rewrite biography on 'About' page
 * Related posts based on tags
 * Google site speed test improvements
 * Clean up SCSS
