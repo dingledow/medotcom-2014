@@ -55,6 +55,15 @@ USE_L10N = False
 
 USE_TZ = True
 
+MARKDOWN_DEUX_STYLES = {
+    "STYLE": {
+        "extras": {
+            "code-friendly": None,
+        },
+        "safe_mode": False,
+    },
+}
+
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
