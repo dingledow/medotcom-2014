@@ -4,6 +4,8 @@ Desperately in need of a better name.
 
 Built with Django, set in Mercury and Whitney.
 
+[View it](http://david.ingledow.co.uk/).
+
 ## Current Version: 1.3
 
 New features:
