@@ -8,12 +8,18 @@ html{
     height: 100%;
     max-height: 100%;
     font-size: 62.5%;
+    @media screen and (max-width: 600px){
+        font-size: 56%;
+    }
+    @media screen and (max-width: 400px){
+        font-size: 50%;
+    }
 }
 
 body{
     font-size: 2.0rem;
     line-height: 1.6em;
-    color: #424242;
+    color: #4c4c4c;
     margin: 0;
 }
 
@@ -204,6 +210,9 @@ div.blog-container {
             }
         }
     }
+    section.post:last-child{
+        padding-bottom: 6em;
+    }
 }
 
 p.post-excerpt{
@@ -234,9 +243,97 @@ body#blog.single{
         h1.post-title{
             color: #3c3c3c;
         }
-        p.image{
+        div.image{
             max-width: 800px;
+            width: 100%;
             padding: 36px 0;
+            margin-left: auto;
+            margin-right: auto;
+            img{
+                width: 100%;
+            }
+            span{
+                position: absolute;
+                font-family: 'Whitney A', 'Whitney B', "fira-sans",  Helvetica,  Arial,  sans-serif;
+                color: #878787;
+                border-top: 1px solid #eaeaea;
+                width: 100%;
+                max-width: 800px;
+                padding: 4px 12px;
+                font-size: 80%;
+                margin-top: -4px;
+                box-sizing: border-box;
+                text-align: center;
+                margin-bottom: 32px;
+            }
+        }
+        div.full-width-image{
+            width: 100%;
+            padding: 36px 0;
+            position: relative;
+            img{
+                width: 100%;
+                height: auto;
+                max-width: inherit;
+            }
+            span{
+                position: absolute;
+                font-family: 'Whitney A', 'Whitney B', "fira-sans",  Helvetica,  Arial,  sans-serif;
+                color: #878787;
+                border-top: 1px solid #eaeaea;
+                width: 100%;
+                padding: 4px 12px;
+                font-size: 80%;
+                margin-top: -4px;
+                text-align: center;
+                margin-bottom: 32px;
+            }
+        }
+        table{
+            max-width: 680px;
+            margin: 1.6em auto;
+            padding-left: 20px;
+            padding-right: 20px;
+            border-collapse: collapse;
+            font-family: 'Whitney A', 'Whitney B', "fira-sans",  Helvetica,  Arial,  sans-serif;
+            tbody{
+                tr{
+                    td, th{
+                        padding: 10px 18px;
+                        border: 1px solid #eaeaea;
+                    }
+                }
+            }
+        }
+        div.share{
+            text-align: center;
+            margin-top: 120px;
+            a.tweet-post{
+                border-radius: 5px;
+                background-color: #fc411b;
+                text-decoration: none;
+                padding-bottom: 0;
+                color: white;
+                font-weight: 700;
+                padding: 12px 18px;
+                font-size: 1.1em;
+                font-family: 'Whitney A', 'Whitney B', "fira-sans",  Helvetica,  Arial,  sans-serif;
+                font-weight: 600;
+                span{
+                    display: inline-block;
+                    vertical-align: middle;
+                    img{
+                        height: 1em;
+                        width: auto;
+                        margin-right: 12px;
+                    }
+                }
+            }
+            a.tweet-post:hover{
+                background-color: #cc3219;
+                transition: all 0.3s ease;
+                cursor: pointer;
+            }
         }
     }
 }
@@ -283,6 +380,11 @@ body#about{
                     height: auto;
                     margin-left: -10%;
                 }
+                @media screen and (max-width: 400px){
+                    width: 200%;
+                    height: auto;
+                    margin-left: -50%;
+                }
             }
         }
         section.content.bio{
@@ -313,6 +415,9 @@ body#about{
                 padding: 4em 10px 4em;
                 display: -webkit-flex;
                 display: flex;
+                @media screen and (max-width: 800px){
+                    display: block;
+                }
                 @media screen and (max-width: 1200px){
                     width: 100%;
                     max-width: 100%;
@@ -326,6 +431,11 @@ body#about{
                     flex: 1;
                     margin: 0 10px;
                     position: relative;
+                    background-size: cover;
+                    @media screen and (max-width: 800px){
+                        display: block;
+                        margin: 1em auto;
+                    }
                     a{
                         text-decoration: none;
                         width: 100%;
@@ -341,6 +451,8 @@ body#about{
                             -ms-transform: translateY(-50%);
                             transform: translateY(-50%);
                             width: 100%;
+                            padding: 0 18px;
+                            box-sizing: border-box;
                         }
                     }
                     a:hover{

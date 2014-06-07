@@ -26,10 +26,11 @@
 {% endblock %}
 
 {% block extra_js %}
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $("img").parent('p').addClass('image');
-        });
+    <script>
+    function myPopup2() {
+        window.open( "https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fdavid.ingledow.co.uk{{post.get_absolute_url}}&text={{post.title}}&tw_p=tweetbutton&url=http%3A%2F%2Fdavid.ingledow.co.uk{{post.get_absolute_url}}&via=dingledow", "myWindow",
+        "status = 1, height = 380, width = 550, resizable = 0" )
+        }
     </script>
 {% endblock %}
 
@@ -42,7 +43,10 @@
                     {{ post.pub_date | date:"d F Y" }}
                 </span>
             </section>
-            {{ post.text | markdown }}
+            {{ post.text|markdown:"STYLE" }}
+            <div class="share">
+                <a class="tweet-post" onClick="myPopup2()"><span><img src="{{STATIC_URL}}img/twitter-bird.svg"></span>Tweet It</a>
+            </div>
         </section>
     </div>
 {% endblock %}
