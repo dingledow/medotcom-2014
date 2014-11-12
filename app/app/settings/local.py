@@ -3,6 +3,7 @@ from base import *
 ALLOWED_HOSTS = ['*']
 
 DEBUG = True
+TEMPLATE_DEBUG = True
 
 SOUTH_TESTS_MIGRATE = False
 

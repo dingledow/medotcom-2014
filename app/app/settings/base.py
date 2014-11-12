@@ -9,9 +9,9 @@ SECRET_KEY = environ.get(
     '##%he5sc1%^9oqlf=dq8ae&k1kw(17q^)-=%f7u$rq9)_d06g_')
 
 # allow debug to be set from env config
-DEBUG = True
+DEBUG = True if environ.get('DEBUG') == 'True' else False
 
-TEMPLATE_DEBUG = True
+TEMPLATE_DEBUG = True if environ.get('TEMPLATE_DEBUG') == 'True' else False
 
 ALLOWED_HOSTS = ['.herokuapp.com', '.ingledow.co.uk', ]
 
@@ -23,7 +23,6 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'gunicorn',
-    'south',
     'blog',
     'markdown_deux',
     'storages',

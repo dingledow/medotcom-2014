@@ -29,6 +29,8 @@ h1,h2,h3,h4,h5,h6{
     font-family: 'Mercury Display A', 'Mercury Display B',  Helvetica, Arial, sans-serif;
     font-weight: 700;
     font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     a{
         color: #494949;
     }
@@ -50,8 +52,10 @@ h4 {
 }
 p, ul, ol {
     margin: 1.6em 0;
-    font-family: 'Mercury SSm A', 'Mercury SSm B', Helvetica,  Arial,  sans-serif;
+    font-family: 'Whitney A', 'Whitney B', "fira-sans", Helvetica,  Arial,  sans-serif;
     font-weight: 100;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 ol ol, ul ul, ul ol, ol ul {
     margin: 0.4em 0;
@@ -84,6 +88,8 @@ nav{
                 font-size: 13px;
                 letter-spacing: 1px;
                 font-weight: 900;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
             }
             a:hover{
                 color: #3c3c3c;
@@ -139,6 +145,8 @@ div.blog-container {
                 font-family: 'Mercury Display A', 'Mercury Display B',  Helvetica,  Arial,  sans-serif;
                 font-weight: 700;
                 font-size: 2em;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
                 line-height: 1.2em;
                 color: #f2462a;
                 text-decoration: none;
@@ -157,10 +165,12 @@ div.blog-container {
                 font-size: 13px;
                 letter-spacing: 1px;
                 margin-bottom: 1em;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
             }
         }
         p.post-excerpt {
-            font-family: 'Mercury SSm A', 'Mercury SSm B', Helvetica,  Arial,  sans-serif;
+            font-family: 'Whitney A', 'Whitney B', "fira-sans", Helvetica,  Arial,  sans-serif;
             font-weight: 100;
             font-size: 0.9em;
             line-height: 1.8em;
@@ -171,6 +181,8 @@ div.blog-container {
             padding-left: 20px;
             padding-right: 20px;
             text-align: center;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
         p, h2, h3, h4, h5, h6, pre{
             max-width: 680px;
