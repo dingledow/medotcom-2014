@@ -1,11 +1,11 @@
-Django==1.6.2
-South==0.8.4
+Django==1.7.1
+South==1.0
 boto==2.27.0
 dj-database-url==0.2.2
-dj-static==0.0.5
+dj-static==0.0.6
 django-markdown-deux==1.0.4
 django-storages==1.1.8
-gunicorn==18.0
+gunicorn==19.1.1
 markdown2==2.2.1
 psycopg2==2.5.1
 pytz==2014.2
