@@ -203,7 +203,7 @@ div.blog-container {
             box-sizing: border-box;
             margin: 20px auto;
             code{
-                white-space: normal;
+                white-space: pre-wrap;
             }
         }
         ul, ol{
